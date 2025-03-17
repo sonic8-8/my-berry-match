@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jalnan';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'NanumSquareNeoLight';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumSquareNeo';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'NanumSquareNeoBold';
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+}
+
+  
+.layout {
+  font-family: 'GmarketSans';
+  background-image: url("https://thank-you-berrymatch-bucket-0.s3.ap-northeast-2.amazonaws.com/design/login_image.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+  
+.layout_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  width:80vw;
+}
+  
+.introduction_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 400px;
+  display: flex;
+  border: 0px;
+  background-color: rgba(253, 253, 253, 0.4);
+  border-radius: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+}
+
+.introduction_text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 2;
+  text-align: left;
+  letter-spacing: 0.5px;
+  color: rgb(47, 47, 47);
+  white-space: pre-line;
+}
+
+.introduction_text_berrymatch {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  letter-spacing: 0.3px;
+  color: #000000;
+  font-family: 'Jalnan';
+}
+
+.login_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  border: 0px;
+  height: 70vh;
+  width: 400px;
+  background-color: rgba(253, 253, 253, 0.4);
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+  color: black;
+}
+
+.login_text_container {
+  display: flex;
+  align-items: center; /* 텍스트 수직 중앙 정렬 */
+  justify-content: center; /* 텍스트 수평 중앙 정렬 */
+}
+
+.login_text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  padding: 1rem;
+}
+
+.login_button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 모바일 화면 */
+@media screen and (max-width: 768px) {
+    .layout_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .introduction_container {
+      display: none;
+    }
+
+    .login_container {
+      width: 80vw;
+      height: 80vh;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+    }
+}

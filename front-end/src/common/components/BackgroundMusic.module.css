@@ -1,0 +1,87 @@
+.music_container {
+    position: fixed;
+    top:10px;
+    right:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Slightly dark background for contrast */
+  }
+  
+  .music_playing {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .music_playing h2 {
+    margin: 0;
+  }
+  
+  .music_playing button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .music_playing button:hover {
+    opacity: 0.8;
+  }
+  
+  .modal {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensure the modal is on top */
+  }
+  
+  .modalContent {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    max-width: 80%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modalContent h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .modalContent button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modalContent button:hover {
+    background: #0056b3;
+  }
+  
+  .modalContent button.closeButton {
+    background: #dc3545;
+  }
+  
+  .modalContent button.closeButton:hover {
+    background: #c82333;
+  }
+  

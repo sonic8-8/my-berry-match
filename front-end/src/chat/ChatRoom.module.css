@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+}
+
+.chat_room_container{
+    width: 60%;
+    height:100%;
+    padding: 0.2%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px 0.5px #c5c5c5;
+    background-color: rgba(85, 85, 85, 0.9);
+    overflow-y: auto;
+    margin-bottom: 15px;
+    color: #fff;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width:768px){
+    .chat_room_container{
+        width: 100%;    
+    }
+}
+
+.chat_room_container > div{
+    margin: 1%;
+}
+
+.chat_header{
+    height: 25%;
+    display: flex;
+}
+
+.chat_option > button{
+    width: 45%;
+    border-radius: 3px;
+    border-width: 0px;
+    text-align: center;
+}
+
+.game_ready{
+    background-color: #00712d;
+    color: #ffffff
+}
+
+.game_end{
+    background-color: #ff9100;
+    color: #ffffff
+}
+
+.chat_content {
+    height: 65%;
+}
+
+.chat_input {
+    height: 10%;
+    width: 100%; /* 컨테이너가 전체 너비를 차지하도록 설정 */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(40, 40, 40, 0.9); /* 인풋 박스 배경과 일치시키기 위해 어두운 배경색 추가 */
+    border-radius: 10px;
+    padding: 8px; /* 컨테이너 내부 패딩을 줄여 공간 활용 */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5); /* 인풋 박스에 그림자 추가 */
+}
+
+.chat_input input{
+    width:80%;
+    height: 80%;
+    border: none;
+    background-color: rgba(60, 60, 60, 0.9); /* 입력창 배경색을 어둡게 설정 */
+    color: #ddd; /* 텍스트 색상을 밝은 회색으로 설정 */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: none; /* input 자체의 그림자를 제거하여 input-container의 스타일을 강조 */
+    outline: none; /* 포커스 시 기본 outline 제거 */
+}
+
+.chat_input input::placeholder {
+    color: #999; /* 플레이스홀더 텍스트 색상을 회색으로 설정 */
+}
+
+.chat_input input:focus {
+    background-color: rgba(80, 80, 80, 0.9); /* 포커스 시 배경색 변경 */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* 포커스 시 외부 그림자 추가 */
+    outline: none; /* 포커스 시 기본 outline 제거 */
+}
+
+
+.chat_input button{
+    width:20%;
+    padding: 12px 20px; /* 전송 버튼의 크기를 줄여 컨테이너에 맞춤 */
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(100, 100, 100, 0.9); /* 배경과 어울리는 회색 톤 */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 14px; /* 폰트 크기를 줄여 비율을 맞춤 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 버튼에 그림자 추가 */
+}
+
+.chat_input button :hover {
+    background-color: rgba(120, 120, 120, 0.9); /* 호버 시 약간 밝아짐 */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* 호버 시 외부 그림자 추가 */
+}

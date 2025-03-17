@@ -1,0 +1,20 @@
+.record_vote_container > h3{
+    text-align: center;
+}
+
+.record_vote_items{
+    display: flex;
+    flex-direction: column;
+}
+.record_vote_items input[type="radio"]{
+    float:right
+}
+
+.record_vote_btn{
+    text-align: center;
+}
+
+.record_vote_btn > button{
+    display: inline-block;
+}
+

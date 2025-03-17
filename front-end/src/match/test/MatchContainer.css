@@ -1,0 +1,18 @@
+.match-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 수평 중앙 정렬 */
+    background-color: rgba(44, 44, 44, 0.8); /* 반투명 배경색 설정 */
+    padding: 20px;
+    width: 1366px; /* 고정 너비 */
+    height: 628px; /* 고정 높이 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    position: absolute; /* 절대 위치 */
+    top: 60px; /* 헤더의 아래 여백 */
+    bottom: 60px; /* 풋터의 위 여백 */
+    left: 0;
+    right: 0;
+    margin: 0 auto; /* 수평 중앙 정렬 */
+    overflow: hidden; /* 내용이 컨테이너를 넘어가지 않도록 설정 */
+}

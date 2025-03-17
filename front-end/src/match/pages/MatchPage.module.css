@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+  }
+  
+.layout {
+    font-family: 'GmarketSans';
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: 100vh;
+}
+  
+.layout_header {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 0 0 auto;
+}
+  
+.layout_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+  
+.layout_footer {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex: 0 0 auto;
+}
+  
+
+/* 모바일 화면 */
+@media screen and (max-width: 768px) {
+    .introduction_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .introduction {
+    
+    }
+}

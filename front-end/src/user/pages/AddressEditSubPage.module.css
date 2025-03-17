@@ -1,0 +1,135 @@
+.profileEdit_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.profileEdit_image_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid #ccc;
+    border-radius: 15px;
+
+    width: 15vw;
+}
+
+.profileEdit_image_title {
+    border: 1px solid #ccc;
+    padding: 10px;
+
+}
+
+.profileEdit_image {
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.profileEdit_image_input {
+    border: 1px solid #ccc;
+    padding: 10px;
+
+}
+
+.profileEdit_introduction_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+    border-radius: 15px;
+
+    border: 1px solid #ccc;
+
+    width: 15vw;
+}
+
+.profileEdit_introduction_title {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.profileEdit_introduction_input {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.profileEdit_button_container {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 배경 오버레이 스타일 */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+  }
+
+.modal_container {
+
+}
+
+.modal_overlay_container {
+
+}
+
+.modal_profileEdit_title {
+
+}
+
+.modal_profileEdit_image_container {
+
+}
+
+.profileEdit_image_input {
+
+}
+
+.modal_profileEdit_introduction_container {
+
+}
+
+.profileEdit_introduction_input {
+
+}
+
+.modal_profileEdit_button_container {
+
+}
+
+.modal_profileEdit_update_button {
+
+}
+
+.modal_close_button {
+
+}

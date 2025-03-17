@@ -1,0 +1,73 @@
+# --------------------------------------------------------- front-end ---------------------------------------------------------
+
+# dependencies
+/front-end/node_modules
+/front-end/.pnp
+/front-end/.pnp.js
+
+# testing
+/front-end/coverage
+
+# production
+/front-end/build
+
+# misc
+/front-end/.DS_Store
+/front-end/.env.local
+/front-end/.env.development.local
+/front-end/.env.test.local
+/front-end/.env.production.local
+
+/front-end/npm-debug.log*
+/front-end/yarn-debug.log*
+/front-end/yarn-error.log*
+
+/front-end/public/firebase-messaging-sw.js
+
+# --------------------------------------------------------- back-end ---------------------------------------------------------
+
+# Ignore general files
+/back-end/HELP.md
+/back-end/.gradle
+/back-end/build/
+!back-end/gradle/wrapper/gradle-wrapper.jar
+!**/back-end/src/main/**/build/
+!**/back-end/src/test/**/build/
+
+### STS ###
+/back-end/.apt_generated
+/back-end/.classpath
+/back-end/.factorypath
+/back-end/.project
+/back-end/.settings
+/back-end/.springBeans
+/back-end/.sts4-cache
+/back-end/bin/
+!**/back-end/src/main/**/bin/
+!**/back-end/src/test/**/bin/
+
+### IntelliJ IDEA ###
+/back-end/.idea
+/back-end/*.iws
+/back-end/*.iml
+/back-end/*.ipr
+/back-end/*.xml
+/back-end/out/
+!**/back-end/src/main/**/out/
+!**/back-end/src/test/**/out/
+
+### NetBeans ###
+/back-end/nbproject/private/
+/back-end/nbbuild/
+/back-end/dist/
+/back-end/nbdist/
+/back-end/.nb-gradle/
+
+### VS Code ###
+/back-end/.vscode/
+
+/back-end/src/main/resources/berrymatch-33860-firebase-adminsdk-ugze3-7df6bfe10e.json
+
+# --------------------------------------------------------- practical-project ---------------------------------------------------------
+/.idea/
+.env

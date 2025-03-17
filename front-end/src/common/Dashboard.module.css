@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'Jalnan';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+  }
+
+.dashboard_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    opacity: 0.9;
+    width: 80%;
+    height: 80%;
+    border-radius: 1rem;
+    font-family: 'Jalnan';
+    font-size: 1rem;
+}
+
+.dashboard_top {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height:100%;
+    color: #6e6e73;
+}
+
+.dashboard_top_logo_container {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    /* padding-right: 1rem;
+    padding-left:1rem; */
+}
+
+.dashboard_top_logo {
+    width: 5vw;
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+
+.dashboard_top_logo_title {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2vw;
+    color: #bbb;
+}
+
+.dashboard_top_identifier {
+    display: flex;
+    flex : 4;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+    height: 100%;
+    color: #ddd;
+    justify-content: center;
+    align-items: center;
+    /* padding-left: 1.5rem;
+    padding-right: 1.5rem; */
+}
+
+.dashboard_top_logout {
+    display: flex;
+    flex: 1;
+    cursor: pointer;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    font-size: 1vw;
+    /* padding-left: 0.5rem;
+    padding-right: 0.5rem; */
+    text-decoration: none;
+    color: #bbb;
+    border: 1px solid #ccc;
+    background-color: rgba(0,0,0,0.9);
+}
+
+
+.dashboard_middle {
+    display: flex;
+    flex: 6;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #6e6e73;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.dashboard_middle_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6e6e73;
+    border: 1px solid #ccc;
+    background-color: rgba(0,0,0,0.9);
+    flex: 1;
+    height: 100%;
+    margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+.dashboard_middle_left_content_profile_image{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.dashboard_middle_left_content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.dashboard_middle_right {
+    display: flex;
+    flex: 3;
+    gap:0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #6e6e73;
+    height: 100%;
+}
+
+.dashboard_middle_right_menu_container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 1rem;    
+}
+
+.dashboard_middle_right_menu {
+    text-align: center;
+    flex: 1;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+    background-color: rgba(0,0,0,0.9);
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.dashboard_bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* flex: 1; */
+    width: 100%;
+}
+
+.dashboard_bottom_menu {
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width:7.5vw;
+    padding-left: 1rem;
+    padding-right:1rem;
+    color:#ddd;
+    background-color:rgba(0,0,0,0.9);   
+    font-size: 1.5vw;
+}
+
+/* 애니메이션 효과 */
+
+/* 기본 상태의 메뉴 스타일 */
+.dashboard_top_logout:hover,
+.dashboard_bottom_menu,
+.dashboard_middle_right_menu,
+.dashboard_top_logo_container {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+/* 마우스를 올렸을 때의 스타일 */
+.dashboard_top_logout:hover,
+.dashboard_bottom_menu:hover,
+.dashboard_middle_right_menu:hover,
+.dashboard_top_logo_container:hover {
+    background-color: #f0f0f0; /* 마우스를 올렸을 때 배경색 */
+    color: #333; /* 마우스를 올렸을 때 텍스트 색상 */
+    border-color: #999; /* 마우스를 올렸을 때 테두리 색상 */
+    text-decoration: none;
+}
+
+/* 추가적인 스타일 (예: 배경 색상 및 텍스트 색상) */
+.dashboard_bottom_menu:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.dashboard_middle_right_menu:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.dashboard_top_logout:hover {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.dashboard_top_logo_container:hover {
+    background-color: #d0d0d0;
+    color: #000;
+}
+
+/* 모바일 화면 */
+@media screen and (max-width: 768px) {
+    .dashboard_container {
+        width: 100%;
+        height: auto; /* 높이를 자동으로 조정 */
+    }
+
+    .dashboard_top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dashboard_top_logo_container,
+    .dashboard_top_identifier,
+    .dashboard_top_logout {
+        width: 100%;
+    }
+
+    .dashboard_middle {
+        flex-direction: column;
+    }
+
+    .dashboard_middle_left,
+    .dashboard_middle_right {
+        width: 100%;
+    }
+
+    .dashboard_middle_right_menu_container {
+        flex-direction: column;
+    }
+
+
+    /* 모바일 화면에서 네비게이션 바로 설정 */
+@media screen and (max-width: 768px) {
+    .dashboard_bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px; /* 높이는 적절히 조정 */
+        background-color: black; /* 배경색 조정 */
+        border-top: 1px solid #ccc; /* 상단 테두리 추가 */
+        color: #fff; /* 텍스트 색상 조정 */
+        z-index: 1000; /* 네비게이션 바가 다른 요소들 위에 오도록 */
+    }
+
+    .dashboard_bottom_menu {
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff; /* 텍스트 색상 조정 */
+        transition: background-color 0.3s ease, color 0.3s ease; /* 애니메이션 추가 */
+    }
+
+    .dashboard_bottom_menu:hover {
+        background-color: #e0e0e0;
+        color: #000;
+    }
+}
+}

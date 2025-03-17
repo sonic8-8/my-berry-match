@@ -1,0 +1,17 @@
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.matching_option_item{
+    display: flex;
+    flex:1;
+    height: 100%;
+    align-items: center;
+}
+
+.matching_option_item > label{
+    margin-right: 0.75rem;
+}

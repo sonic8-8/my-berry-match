@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'GmarketSans';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansLight.ttf') format("truetype");
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Jalnan';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/goodchoice/Jalnan.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeoBold';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+  }
+  
+.layout {
+    font-family: 'NanumSquareNeoBold';
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8e8ed;;
+    height: 100vh;
+    width: 100vw;
+}
+  
+.layout_header {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.layout_header > h1 {
+    font-size: 1.5rem;
+}
+
+.layout_content {
+    /* justify-content: center; */
+    height: 80vh;
+    width: 400px;
+    border-radius: 1rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+    padding:2rem;
+}
+  
+.signupForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.signup_input_container_none{
+    margin:0;
+}
+
+.signup_input_container {
+    display: flex;
+    flex-direction: row;
+    padding: 0.125rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.signup_input_title {
+    width: 30%;
+    font-size: 1.25rem;
+}
+
+.signup_input {
+    width: 60%; 
+    height: 100%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.signupForm_button {
+    width: 80%; 
+    padding: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.signupForm_button:hover {
+    background-color: #3f9245; /* 버튼에 호버 효과 추가 */
+}
+
+
+/* 모바일 화면 */
+@media screen and (max-width: 768px) {
+    .layout_content{
+        padding: 1rem;
+        width: 80vw;
+        text-align: center;
+    }
+    
+    .signupForm{
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+   .signup_input_container{
+        flex-direction: column;
+        align-items: start;
+        width: 80%;
+    }
+
+    .layout_header > h1 {
+        font-size: 1rem;
+    }
+    
+    .signup_input_title{
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 0.25rem;
+    }
+    
+    .signup_input{
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.25rem;
+    }
+
+    .signupForm_button {
+        width: 100%;
+    }
+  
+}

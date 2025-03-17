@@ -1,0 +1,199 @@
+/* .team 컨테이너 */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* 상단에서 시작 */
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.9); /* 카드 배경색 */
+    border-radius: 12px; /* 테두리 반경 */
+    margin: 10px; /* 카드들 사이의 여백 설정 */
+    height: 650px; /* 높이 유지 */
+    width: 300px; /* 너비 유지 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 박스 크기 조정 */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* 카드 그림자 */
+    position: relative; /* leave-button이 부모의 하단에 고정되도록 설정 */
+}
+
+/* .glow-effect 효과 */
+.glow-effect {
+    filter: drop-shadow(0 0 2px #fff) drop-shadow(0 0 4px #fff) drop-shadow(0 0 30px #ead2ea);
+    transition: filter 0.3s ease-in-out;
+}
+
+.glow-effect:hover {
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 20px #fff) drop-shadow(0 0 60px #ead2ea);
+}
+
+/* 팀 로고 이미지 스타일 */
+.team-logo {
+    width: 120px;
+    height: 170px;
+    display: block;
+    border-radius: 12px;
+    transform: perspective(500px) rotateX(5deg) rotateY(5deg);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0.95;
+}
+
+.team-logo:hover {
+    transform: perspective(500px) rotateX(0deg) rotateY(0deg) scale(1.01);
+}
+
+/* 팀 레이블 스타일 */
+.team .team-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Glitch 효과 */
+.glitch-effect {
+    position: relative;
+    display: inline-block;
+    filter: drop-shadow(0 0 4px #fff) drop-shadow(0 0 8px #fff) drop-shadow(0 0 30px #00ffcc);
+    transition: filter 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.glitch-effect:hover {
+    animation: glitch-skew 1s infinite, glitch 1s infinite linear alternate-reverse;
+    filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #fff) drop-shadow(0 0 60px #00ffcc);
+}
+
+.glitch-effect::before,
+.glitch-effect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.glitch-effect:hover::before {
+    left: 1px;
+    text-shadow: -1px 0 blue;
+    clip: rect(20px, 9999px, 50px, 0);
+    animation: glitch 1s infinite linear alternate-reverse;
+}
+
+.glitch-effect:hover::after {
+    left: -1px;
+    text-shadow: -1px 0 red;
+    clip: rect(10px, 9999px, 40px, 0);
+    animation: glitch 1s infinite linear alternate;
+}
+
+/* 사용자 목록 스타일 */
+.team .user-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.user-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-image: url('./User.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+/* 실제 이미지가 있는 경우 기본 이미지 제거 */
+.user img[src] {
+    background-image: none;
+}
+
+/* 사용자 정보 */
+.user-info {
+    color: #ccc;
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.status {
+    font-size: 14px;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+}
+
+.status.ready::before {
+    content: "🟢 준비완료";
+    color: #4caf50;
+    margin-right: 5px;
+}
+
+.status.waiting::before {
+    content: "🟡 대기중";
+    color: #ffeb3b;
+    margin-right: 5px;
+}
+
+/* Glitch 애니메이션 */
+@keyframes glitch-skew {
+    0%, 100% {
+        transform: skew(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: skew(-2deg);
+        opacity: 0.95;
+    }
+}
+
+@keyframes glitch {
+    0%, 100% {
+        clip: rect(0, 9999px, 0, 0);
+    }
+    50% {
+        clip: rect(20px, 9999px, 40px, 0);
+    }
+}
+
+.leave-button {
+    position: absolute; /* 카드 하단에 고정 */
+    bottom: 20px; /* 카드 하단에서 20px 떨어진 위치 */
+    left: 10%; /* 카드 중앙에 맞추기 위한 left */
+    width: 80%; /* 너비를 조절하여 카드 너비와 일치시키기 */
+    padding: 10px;
+    background-color: #ff4b4b;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.leave-button.hidden {
+    visibility: hidden; /* 버튼을 보이지 않게 처리 */
+}
+
+.leave-button:hover {
+    background-color: #ff1f1f; /* 호버 시 버튼 색상 변화 */
+}

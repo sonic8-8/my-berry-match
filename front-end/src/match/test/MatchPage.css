@@ -1,0 +1,21 @@
+.match-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 수평 중앙 정렬 */
+    background-color: rgba(88, 87, 87, 0.9); /* 반투명 배경색 설정 */
+    padding: 20px;
+    width: 1366px; /* 중앙 부분의 너비 설정 */
+    height: 644px; /* 고정 높이 설정 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    gap: 20px; /* 팀 카드 사이의 간격 설정 */
+    overflow: hidden; /* 내용이 컨테이너를 넘어가지 않도록 설정 */
+    position: relative; /* 내부 요소의 절대 위치를 설정할 때 필요 */
+}
+
+/* 화면 너비가 768px 이하일 때 */
+@media (max-width: 768px) {
+    .match-container {
+        flex-direction: column; /* 수직 배치로 변경 */
+    }
+}

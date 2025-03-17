@@ -1,0 +1,30 @@
+.chat_member > div{
+    display: flex;
+    justify-content:space-around;
+    padding: 1%;
+    margin:2%;
+}
+
+.chat_member_img{
+    width: 25%;
+    height:100%;
+}
+
+.chat_member_info_upper{
+    width:75%;
+    height:100%
+}
+
+.chat_member_nick{
+    width:50%;
+    text-align: left;
+}
+
+.chatMember_status{
+    width:20%;
+    text-align: left;
+}
+
+.chat_member_record{
+    width:100%;
+}

@@ -1,0 +1,126 @@
+.postpage_container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: bisque; */
+
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+
+        .posts_container{
+            height: 85%;
+            width: 80%;
+
+            /* background-color: aqua; */
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            
+            gap: 10px 100px;
+
+                
+        }
+
+        .post_container{
+            display: flex;
+            height: 50%;
+                .post_detail_container{
+                    /* background-color: aqua; */
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                        
+                        .post_title{
+                            margin-top: 5px;
+                        }
+                        .post_date{
+                            margin-top: 5px;
+                        }
+                        .post_writer{
+                            margin-top: 5px;
+                        }
+                        
+                }
+        }
+
+}
+
+.post_thumbnail{
+    height: 150px;
+    width: 150px;
+
+    border-radius: 10px;
+}
+
+.page_change_button_container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .page_change_button{
+            
+            /* background-color: d; */
+
+            border-radius: 10px;
+
+            height: 30px;
+            width: 30px;
+
+            margin-right: 20px;
+
+            cursor: pointer;
+        }
+
+        .page_change_button:hover{
+            background-color: bisque;
+        }
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50vh;
+    color: aliceblue;
+}
+  
+.modal_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* 검정색 배경에 50% 투명도 */
+    z-index: 999; /* 다른 요소 위에 표시 */
+    /* display: none; 기본적으로 숨김 */
+}
+  
+@media (max-width: 768px) {
+    .postpage_container{
+        overflow-y: auto;
+        height: 90vh;
+        width: 80wh;
+        display: flex;
+        flex-direction: column;
+    }
+    .posts_container{
+        height: 0vh;
+        width: 60%;
+
+
+        /* background-color: aqua; */
+    }
+    .post_thumbnail{
+        height: 150px;
+        width: 150px;
+    
+        border-radius: 10px;
+    }
+
+}

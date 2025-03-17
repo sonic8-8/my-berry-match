@@ -1,0 +1,84 @@
+/* 기본적으로 창이 숨겨져 있다가 나타나도록 설정 */
+.popupPanel {
+    position: fixed;
+    bottom: -100%; /* 처음에는 화면 아래에 숨김 */
+    right: 20px; /* 오른쪽에서 살짝 떨어지게 */
+    width: 300px; /* 창의 너비 */
+    height: auto; /* 창 높이를 자동으로 조정 */
+    background-color: rgba(253,253,253,0.4);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out; /* 슬라이드 및 투명도 애니메이션 */
+    opacity: 0; /* 기본 상태에서는 보이지 않음 */
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  /* 창이 열릴 때 화면 위로 올라옴 */
+  .popupPanel.open {
+    bottom: 0; /* 화면 하단에 고정 */
+    opacity: 1; /* 팝업이 보이게 됨 */
+  }
+  
+  /* 열기 버튼 스타일 */
+  .openButton {
+    cursor: pointer;
+    background-color: rgba(0, 123, 255,0.9);
+    border: 1px solid #ccc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* 부드러운 버튼 색상 전환 */
+  }
+  
+  .openButton:hover {
+    background-color: rgba(85, 158, 255, 0.9); /* 호버 시 색상 변화 */
+  }
+  
+  /* 헤더 스타일 (창 상단) */
+  .panelHeader {
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: rgba(0, 123, 255,0.9);
+    color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .panelHeader > h2{
+    font-size: 1.5rem;
+  }
+
+  /* 본문 내용 스타일 */
+  .panelContent {
+   padding:0.5rem;
+    background-color: #eee; /* 콘텐츠 영역의 배경색 */
+    line-height: 1.6;
+  }
+
+  .joinSection > h3{
+    margin: 0;
+  }
+  
+  /* 닫기 버튼 */
+  .closeButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: color 0.3s ease; /* 닫기 버튼에 호버 효과 추가 */
+  }
+  
+  .closeButton:hover {
+    color: #bbb; /* 닫기 버튼 호버 시 색상 변화 */
+  }
+  
+  /* 창이 나타나는 동안 스크롤 막기 */
+  body.popup-open {
+    overflow: hidden;
+  }
+  
